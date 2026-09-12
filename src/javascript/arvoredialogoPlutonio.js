@@ -67,7 +67,7 @@ function escrever(texto) {
 
 const dialogo = {
     inicio: {
-        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vim pessoalmente, o que já demonstra a seriedade desta proposta. Poderiam ao menos fingir surpresa.",
+        texto: "Bom dia, nobres colegas! Eu sou o Mr. Plutônio, e sim, antes que perguntem, aquele Plutônio, das Indústrias Plutônio. Vim pessoalmente, o que já demonstra a seriedade desta proposta.",
         opcao1: "Próximo",
         proximo1: "conceito1",
         opcao2: null,
@@ -76,7 +76,7 @@ const dialogo = {
 
   conceito1: {
     texto:
-      "Antes de falarmos de privatização, preciso que dominem um conceito básico, do contrário, nossa negociação vai por água abaixo: proposição. Prestem atenção, porque não repito duas vezes, ou melhor, repito, mas cobro juros.",
+      "Antes de falarmos de privatização, preciso que dominem um conceito básico: proposição, do contrário, nossa negociação vai por água abaixo. Prestem atenção, porque não repito duas vezes, ou melhor, repito, mas cobro juros.",
     opcao1: "Próximo",
     proximo1: "conceito2",
     opcao2: null,

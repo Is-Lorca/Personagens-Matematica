@@ -68,7 +68,7 @@ function escrever(texto) {
 const dialogo = {
   inicio: {
     texto:
-      "Bom dia, alunos! Me chamo Marilia Curie Peixoto, mas podem me chamar de Dra Peixoto, serei a professora de Catemática de vocês. Desejo boas-vindas a Gatec.",
+      "Bom dia, alunos! Me chamo Marilia Curie Peixoto, mas podem me chamar de Dra Peixoto, serei a professora de Catemática de vocês. Desejo boas-vindas à Gatec.",
     opcao1: "Próximo",
     proximo1: "logica",
     opcao2: null,
