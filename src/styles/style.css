@@ -189,6 +189,7 @@ picture img {
     background-color: transparent;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 }
 
 #botaoComLinha {
@@ -245,10 +246,6 @@ picture img {
     width: 6rem;
 }
 
-.linkBotaoMat {
-    text-decoration: none;
-}
-
 .botaoMateria {
     margin: 0.5rem;
     
@@ -271,7 +268,7 @@ picture img {
 }
 
 .botaoMateria:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Personagens */
