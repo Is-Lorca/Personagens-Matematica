@@ -1,0 +1,126 @@
+{
+    "titulo": "Equação de uma Reta",
+    "personagem": "plutonio",
+    "inicio": "inicio",
+    "dialogos": {
+        "inicio": {
+            "texto": "Bom dia, nobres colegas! Hoje falaremos de retas, o caminho mais curto entre dois pontos. Como minha proposta: o caminho mais curto entre a escola e o meu bolso.",
+            "opcao1": "Próximo",
+            "proximo1": "formula",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "formula": {
+            "texto": "A reta é dada por y = mx + b. O m é o coeficiente angular, a inclinação. O b é o coeficiente linear, onde a reta corta o eixo y. Em y = 4x - 3, temos m = 4 e b = -3.",
+            "opcao1": "Próximo",
+            "proximo1": "testeCoefLinear",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeCoefLinear": {
+            "texto": "Teste: na equação y = 4x - 3, qual é o coeficiente linear?",
+            "opcao1": "a) -3",
+            "proximo1": "testeCoefLinearCerto",
+            "opcao2": "b) 4",
+            "proximo2": "testeCoefLinearErrado"
+        },
+        "testeCoefLinearCerto": {
+            "texto": "Correto. O b é -3 e indica onde a reta corta o eixo y.",
+            "opcao1": "Próximo",
+            "proximo1": "doisPontos",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeCoefLinearErrado": {
+            "texto": "Errado. O 4 é o coeficiente angular. O linear é -3.",
+            "opcao1": "Próximo",
+            "proximo1": "doisPontos",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "doisPontos": {
+            "texto": "Com dois pontos A(x₁, y₁) e B(x₂, y₂), primeiro achamos o coeficiente angular: m = (y₂ − y₁) / (x₂ − x₁). Depois, usamos um dos pontos: y − y₁ = m(x − x₁).",
+            "opcao1": "Próximo",
+            "proximo1": "exemploAngular",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "exemploAngular": {
+            "texto": "Exemplo: a reta que passa por A(2, 3) e B(4, 7). Primeiro, m = (7 − 3) / (4 − 2) = 4 / 2 = 2.",
+            "opcao1": "Próximo",
+            "proximo1": "exemploEquacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "exemploEquacao": {
+            "texto": "Usando o ponto (2, 3): y − 3 = 2(x − 2), então y − 3 = 2x − 4, logo y = 2x − 1.",
+            "opcao1": "Próximo",
+            "proximo1": "exemploResultado",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "exemploResultado": {
+            "texto": "Portanto, a reta que passa por (2, 3) e (4, 7) é y = 2x − 1.",
+            "opcao1": "Próximo",
+            "proximo1": "testeAngular",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeAngular": {
+            "texto": "Teste: os pontos são A(0, 1) e B(2, 5). Qual é o coeficiente angular?",
+            "opcao1": "a) 2",
+            "proximo1": "testeAngularCerto",
+            "opcao2": "b) 1/2",
+            "proximo2": "testeAngularErrado"
+        },
+        "testeAngularCerto": {
+            "texto": "Correto. m = (5 − 1) / (2 − 0) = 2.",
+            "opcao1": "Próximo",
+            "proximo1": "testeEquacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeAngularErrado": {
+            "texto": "Errado. O m é a diferença dos y dividida pela diferença dos x, e não o contrário.",
+            "opcao1": "Próximo",
+            "proximo1": "testeEquacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeEquacao": {
+            "texto": "Teste: ainda com A(0, 1) e B(2, 5), qual é a equação da reta?",
+            "opcao1": "a) y = 2x + 1",
+            "proximo1": "testeEquacaoCerto",
+            "opcao2": "b) y = x + 2",
+            "proximo2": "testeEquacaoErrado"
+        },
+        "testeEquacaoCerto": {
+            "texto": "Correto. y − 1 = 2(x − 0), logo y = 2x + 1.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeEquacaoErrado": {
+            "texto": "Errado. Com m = 2 e passando por (0, 1), a equação é y = 2x + 1.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "encerramento": {
+            "texto": "Muito bem, nobres colegas, encerro por aqui. Meu motorista já está impaciente.",
+            "opcao1": "Obrigado pelo conhecimento",
+            "proximo1": "despedida",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "despedida": {
+            "texto": "Agradeça votando a favor da minha empresa, colega. Até mais!",
+            "opcao1": "RETURN",
+            "proximo1": null,
+            "opcao2": null,
+            "proximo2": null
+        }
+    }
+}

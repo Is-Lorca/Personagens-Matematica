@@ -1,0 +1,147 @@
+ {
+    "titulo": "Relação Binária",
+    "personagem": "plutonio",
+    "inicio": "inicio",
+    "dialogos": {
+        "inicio": {
+            "texto": "Bom dia, colegas. Hoje usaremos o produto cartesiano para um novo conceito: Relação Binária.",
+            "opcao1": "Próximo",
+            "proximo1": "escolhaPares",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "escolhaPares": {
+            "texto": "Sejam A = {1, 2, 3} e B = {2, 3, 4}. O produto A × B traz todos os pares possíveis. Mas eu confesso que não gosto de aceitar qualquer parceria...",
+            "opcao1": "Próximo",
+            "proximo1": "definicao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "definicao": {
+            "texto": "Uma relação binária de A em B é um subconjunto de A × B. Por exemplo, os pares em que x < y: R = {(1,2), (1,3), (1,4), (2,3), (2,4), (3,4)}.",
+            "opcao1": "Próximo",
+            "proximo1": "testeRelacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeRelacao": {
+            "texto": "Teste: se A = {1, 2, 3} e B = {2, 3, 4}, R = {(1,2), (3,5)} pode ser uma relação binária de A em B?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeRelacaoErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeRelacaoCerto"
+        },
+        "testeRelacaoCerto": {
+            "texto": "Correto. O par (3,5) não pertence a A × B, pois 5 não está em B.",
+            "opcao1": "Próximo",
+            "proximo1": "notacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeRelacaoErrado": {
+            "texto": "Errado. Como 5 não pertence a B, o par (3,5) não existe em A × B.",
+            "opcao1": "Próximo",
+            "proximo1": "notacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "notacao": {
+            "texto": "Quando (x, y) ∈ R, escrevemos xRy. Se (1,4) ∈ R, escrevemos 1R4: o 1 está relacionado com o 4.",
+            "opcao1": "Próximo",
+            "proximo1": "testeNotacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeNotacao": {
+            "texto": "Teste: se (1,4) ∈ R, podemos escrever 1R4?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeNotacaoCerto",
+            "opcao2": "Falsa",
+            "proximo2": "testeNotacaoErrado"
+        },
+        "testeNotacaoCerto": {
+            "texto": "Correto. Escrever 1R4 significa que o par pertence à relação.",
+            "opcao1": "Próximo",
+            "proximo1": "dominioImagem",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeNotacaoErrado": {
+            "texto": "Errado. Se o par pertence a R, a notação 1R4 é exatamente a correta.",
+            "opcao1": "Próximo",
+            "proximo1": "dominioImagem",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "dominioImagem": {
+            "texto": "O domínio D(R) reúne os primeiros elementos dos pares. A imagem Im(R) reúne os segundos. Por exemplo, em R = {(2,7), (5,8), (9,1)}, D(R) = {2, 5, 9} e Im(R) = {7, 8, 1}.",
+            "opcao1": "Próximo",
+            "proximo1": "testeDominio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeDominio": {
+            "texto": "Teste: na relação R = {(3,6), (4,1), (8,5)}, qual é o domínio?",
+            "opcao1": "a) D(R) = {3, 4, 8}",
+            "proximo1": "testeDominioCerto",
+            "opcao2": "b) D(R) = {6, 1, 5}",
+            "proximo2": "testeDominioErrado"
+        },
+        "testeDominioCerto": {
+            "texto": "Correto. O domínio é formado pelos primeiros elementos.",
+            "opcao1": "Próximo",
+            "proximo1": "relacaoInversa",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeDominioErrado": {
+            "texto": "Errado. {6, 1, 5} são os segundos elementos, ou seja, a imagem.",
+            "opcao1": "Próximo",
+            "proximo1": "relacaoInversa",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "relacaoInversa": {
+            "texto": "Por fim, a relação inversa R⁻¹: basta inverter a ordem de cada par. Se R = {(2,7), (5,8)}, então R⁻¹ = {(7,2), (8,5)}.",
+            "opcao1": "Próximo",
+            "proximo1": "testeInversa",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeInversa": {
+            "texto": "Teste: se R = {(1,5), (2,6)}, então R⁻¹ = {(1,5), (2,6)}?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeInversaErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeInversaCerto"
+        },
+        "testeInversaCerto": {
+            "texto": "Correto. A inversa seria {(5,1), (6,2)}: os pares precisam ser invertidos.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeInversaErrado": {
+            "texto": "Errado. Sem inverter a ordem, não é a inversa. O correto é {(5,1), (6,2)}.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "encerramento": {
+            "texto": "Por hoje encerro, nobres colegas. Meu tempo vale mais que o de vocês.",
+            "opcao1": "Obrigado pelo conhecimento",
+            "proximo1": "despedida",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "despedida": {
+            "texto": "Agradeça votando a favor da minha empresa, colega. Até mais!",
+            "opcao1": "RETURN",
+            "proximo1": null,
+            "opcao2": null,
+            "proximo2": null
+        }
+    }
+}

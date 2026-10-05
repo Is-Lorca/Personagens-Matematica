@@ -1,0 +1,147 @@
+{
+    "titulo": "Produto Cartesiano",
+    "personagem": "plutonio",
+    "inicio": "inicio",
+    "dialogos": {
+        "inicio": {
+            "texto": "Bom dia, nobres colegas! Hoje vamos combinar conjuntos, algo que faço com empresas todos os dias. Chama-se produto cartesiano.",
+            "opcao1": "Próximo",
+            "proximo1": "definicao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "definicao": {
+            "texto": "É uma operação entre dois conjuntos que forma pares ordenados: o primeiro elemento vem do primeiro conjunto, e o segundo vem do segundo.",
+            "opcao1": "Próximo",
+            "proximo1": "exemplo",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "exemplo": {
+            "texto": "Por exemplo, se A = {x, y} e B = {1, 2}, temos A × B = {(x,1), (x,2), (y,1), (y,2)}. A ordem importa: (x,1) não é (1,x).",
+            "opcao1": "Próximo",
+            "proximo1": "testeOrdem",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeOrdem": {
+            "texto": "Teste: se A = {x, y} e B = {1, 2}, qual alternativa representa A × B?",
+            "opcao1": "a) {(x,1), (x,2), (y,1), (y,2)}",
+            "proximo1": "testeOrdemCerto",
+            "opcao2": "b) {(1,x), (2,x), (1,y), (2,y)}",
+            "proximo2": "testeOrdemErrado"
+        },
+        "testeOrdemCerto": {
+            "texto": "Correto. Os elementos de A ficam na primeira posição.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntoVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeOrdemErrado": {
+            "texto": "Errado. Em A × B, os elementos de A vêm primeiro. A segunda alternativa seria B × A.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntoVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "conjuntoVazio": {
+            "texto": "Propriedade importante: se um dos conjuntos é vazio, não há como formar pares. Então A × ∅ = ∅ e ∅ × A = ∅. Sem sócio, sem negócio.",
+            "opcao1": "Próximo",
+            "proximo1": "testeVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeVazio": {
+            "texto": "Teste: se B = {3, 4}, então ∅ × B é um conjunto vazio?",
+            "opcao1": "Sim",
+            "proximo1": "testeVazioCerto",
+            "opcao2": "Não",
+            "proximo2": "testeVazioErrado"
+        },
+        "testeVazioCerto": {
+            "texto": "Correto. Sem elementos no primeiro conjunto, nenhum par pode ser formado.",
+            "opcao1": "Próximo",
+            "proximo1": "distribuicaoUniao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeVazioErrado": {
+            "texto": "Errado. Se um dos conjuntos é vazio, o produto também é vazio.",
+            "opcao1": "Próximo",
+            "proximo1": "distribuicaoUniao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "distribuicaoUniao": {
+            "texto": "Outra propriedade: o produto distribui sobre a união. A × (B ∪ C) = (A × B) ∪ (A × C). Divide-se e conquista-se, como toda boa aquisição.",
+            "opcao1": "Próximo",
+            "proximo1": "testeUniao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeUniao": {
+            "texto": "Teste: se A = {1}, B = {2, 3} e C = {3, 4}, então A × (B ∪ C) é:",
+            "opcao1": "a) {(1,2), (1,3), (1,4)}",
+            "proximo1": "testeUniaoCerto",
+            "opcao2": "b) {(1,3)}",
+            "proximo2": "testeUniaoErrado"
+        },
+        "testeUniaoCerto": {
+            "texto": "Correto. A união B ∪ C é {2, 3, 4}, e o 1 se combina com cada um deles.",
+            "opcao1": "Próximo",
+            "proximo1": "distribuicaoIntersecao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeUniaoErrado": {
+            "texto": "Errado. {(1,3)} seria o caso da intersecção. Aqui é união, então todos os elementos entram.",
+            "opcao1": "Próximo",
+            "proximo1": "distribuicaoIntersecao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "distribuicaoIntersecao": {
+            "texto": "Com a intersecção vale algo parecido: A × (B ∩ C) = (A × B) ∩ (A × C).",
+            "opcao1": "Próximo",
+            "proximo1": "testeIntersecao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeIntersecao": {
+            "texto": "Teste: se A = {7}, B = {1, 2, 3} e C = {2, 3, 4}, então A × (B ∩ C) é:",
+            "opcao1": "a) {(7,2), (7,3)}",
+            "proximo1": "testeIntersecaoCerto",
+            "opcao2": "b) {(7,1), (7,4)}",
+            "proximo2": "testeIntersecaoErrado"
+        },
+        "testeIntersecaoCerto": {
+            "texto": "Correto. B ∩ C = {2, 3}, e o 7 vem na primeira posição.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeIntersecaoErrado": {
+            "texto": "Errado. Só 2 e 3 aparecem nos dois conjuntos. 1 e 4 ficam de fora.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "encerramento": {
+            "texto": "Por hoje é só, nobres colegas. Nos vemos na próxima sessão, ou nos corredores, se me permitirem circular por eles.",
+            "opcao1": "Obrigado pelo conhecimento",
+            "proximo1": "despedida",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "despedida": {
+            "texto": "Agradeça votando a favor da minha empresa, colega. Até mais!",
+            "opcao1": "RETURN",
+            "proximo1": null,
+            "opcao2": null,
+            "proximo2": null
+        }
+    }
+}

@@ -1,0 +1,168 @@
+{
+    "titulo": "Funções",
+    "personagem": "plutonio",
+    "inicio": "inicio",
+    "dialogos": {
+        "inicio": {
+            "texto": "Bom dia, nobres colegas! Hoje falaremos de funções.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoConstante",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "funcaoConstante": {
+            "texto": "Primeiro, a função constante: f(x) = c. Para qualquer x, o resultado é sempre o mesmo. Por exemplo, f(x) = 8: com x = 1 ou x = 100, o resultado é 8. Como o salário de quem trabalha para mim: não muda nunca.",
+            "opcao1": "Próximo",
+            "proximo1": "imagemConstante",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "imagemConstante": {
+            "texto": "Sua imagem tem um único valor. Se f(x) = 8, então Im = {8}. No gráfico, é uma reta paralela ao eixo x.",
+            "opcao1": "Próximo",
+            "proximo1": "testeConstante",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeConstante": {
+            "texto": "Teste: qual destas funções é constante?",
+            "opcao1": "a) f(x) = x + 2",
+            "proximo1": "testeConstanteErrado",
+            "opcao2": "b) f(x) = 9",
+            "proximo2": "testeConstanteCerto"
+        },
+        "testeConstanteCerto": {
+            "texto": "Correto. O resultado é sempre 9, independentemente de x.",
+            "opcao1": "Próximo",
+            "proximo1": "testeImagem",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeConstanteErrado": {
+            "texto": "Errado. Em x + 2, o resultado muda conforme o x.",
+            "opcao1": "Próximo",
+            "proximo1": "testeImagem",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeImagem": {
+            "texto": "Teste: se f(x) = -5, sua imagem é Im = {-5, 0}?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeImagemErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeImagemCerto"
+        },
+        "testeImagemCerto": {
+            "texto": "Correto. A imagem é apenas {-5}, não há outro valor possível.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoIdentidade",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeImagemErrado": {
+            "texto": "Errado. A função só produz -5, então a imagem é {-5}.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoIdentidade",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "funcaoIdentidade": {
+            "texto": "Agora, a função identidade: f(x) = x. Cada valor é associado a ele mesmo. Se x = 4, resultado 4; se x = -2, resultado -2. Seu gráfico é uma reta que passa pela origem, na bissetriz do primeiro e do terceiro quadrantes.",
+            "opcao1": "Próximo",
+            "proximo1": "testeIdentidade",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeIdentidade": {
+            "texto": "Teste: qual é a função identidade?",
+            "opcao1": "a) f(x) = x",
+            "proximo1": "testeIdentidadeCerto",
+            "opcao2": "b) f(x) = -x",
+            "proximo2": "testeIdentidadeErrado"
+        },
+        "testeIdentidadeCerto": {
+            "texto": "Correto. O resultado é o próprio x.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoLinear",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeIdentidadeErrado": {
+            "texto": "Errado. -x inverte o sinal, então não é a identidade.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoLinear",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "funcaoLinear": {
+            "texto": "A função linear: f(x) = ax, com a ≠ 0. Por exemplo, f(x) = 3x. Se x = 2, o resultado é 6. Seu gráfico é uma reta que passa pela origem e sua imagem é R.",
+            "opcao1": "Próximo",
+            "proximo1": "testeLinear",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeLinear": {
+            "texto": "Teste: a função f(x) = x + 3 é linear?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeLinearErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeLinearCerto"
+        },
+        "testeLinearCerto": {
+            "texto": "Correto. Ela tem o termo +3, então não tem a forma f(x) = ax.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoAfim",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeLinearErrado": {
+            "texto": "Errado. A função linear não tem termo somado. f(x) = x + 3 é uma função afim.",
+            "opcao1": "Próximo",
+            "proximo1": "funcaoAfim",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "funcaoAfim": {
+            "texto": "Por fim, a função afim: f(x) = ax + b, com a ≠ 0. Por exemplo, f(x) = -3x + 4, com a = -3 e b = 4. Até f(x) = 5x é afim, pois nesse caso b = 0.",
+            "opcao1": "Próximo",
+            "proximo1": "testeAfim",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeAfim": {
+            "texto": "Teste: qual alternativa representa uma função afim?",
+            "opcao1": "a) f(x) = 3x + 4",
+            "proximo1": "testeAfimCerto",
+            "opcao2": "b) f(x) = 6",
+            "proximo2": "testeAfimErrado"
+        },
+        "testeAfimCerto": {
+            "texto": "Correto. Ela tem a forma ax + b, com a = 3 e b = 4.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeAfimErrado": {
+            "texto": "Errado. f(x) = 6 é uma função constante.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "encerramento": {
+            "texto": "Por hoje é só, nobres colegas. Votem com sabedoria, ou melhor, votem em mim.",
+            "opcao1": "Obrigado pelo conhecimento",
+            "proximo1": "despedida",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "despedida": {
+            "texto": "Agradeça votando a favor da minha empresa, colega. Até mais!",
+            "opcao1": "RETURN",
+            "proximo1": null,
+            "opcao2": null,
+            "proximo2": null
+        }
+    }
+}

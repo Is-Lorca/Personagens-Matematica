@@ -1,0 +1,154 @@
+{
+    "titulo": "Conjuntos",
+    "personagem": "plutonio",
+    "inicio": "inicio",
+    "dialogos": {
+        "inicio": {
+            "texto": "Bom dia, nobres colegas! Já dominaram a lógica, então passemos aos conjuntos. Todo empresário sabe organizar o que é seu... e o que ainda vai ser.",
+            "opcao1": "Próximo",
+            "proximo1": "conceito",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "conceito": {
+            "texto": "Um conjunto é uma coleção de elementos, sem repetição e sem ordem.",
+            "opcao1": "Próximo",
+            "proximo1": "representacao",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "representacao": {
+            "texto": "Representamos um conjunto com chaves: A = {a, e, i, o, u}. Para saber se algo faz parte dele, usamos ∈ (pertence) e ∉ (não pertence). Assim, a ∈ A, mas b ∉ A.",
+            "opcao1": "Próximo",
+            "proximo1": "testePertinencia",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testePertinencia": {
+            "texto": "Teste: considerando A = {a, e, i, o, u}, a afirmação “u ∈ A” é:",
+            "opcao1": "Verdadeira",
+            "proximo1": "testePertinenciaCerto",
+            "opcao2": "Falsa",
+            "proximo2": "testePertinenciaErrado"
+        },
+        "testePertinenciaCerto": {
+            "texto": "Correto. A vogal u está no conjunto. Até que o senhor sabe contar até cinco.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntoVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testePertinenciaErrado": {
+            "texto": "Errado. O u está dentro das chaves, logo pertence. Atenção, o tempo de um empresário é precioso.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntoVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "conjuntoVazio": {
+            "texto": "Agora, o conjunto vazio: aquele que não tem nenhum elemento, representado por { } ou ∅. Como o caixa da escola pública, segundo meus consultores.",
+            "opcao1": "Próximo",
+            "proximo1": "exemploVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "exemploVazio": {
+            "texto": "Por exemplo, o conjunto dos números naturais menores que 0. Não existe nenhum, então ele é vazio.",
+            "opcao1": "Próximo",
+            "proximo1": "testeVazio",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeVazio": {
+            "texto": "Teste: “O conjunto dos números naturais menores que 0 é vazio.” A afirmação é:",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeVazioCerto",
+            "opcao2": "Falsa",
+            "proximo2": "testeVazioErrado"
+        },
+        "testeVazioCerto": {
+            "texto": "Correto. Não há natural menor que 0, logo o conjunto é vazio. Sem elementos, sem lucro.",
+            "opcao1": "Próximo",
+            "proximo1": "subconjunto",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeVazioErrado": {
+            "texto": "Errado. Os naturais começam em 0, então nenhum deles é menor que 0.",
+            "opcao1": "Próximo",
+            "proximo1": "subconjunto",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "subconjunto": {
+            "texto": "Agora, subconjunto. Dizemos que A ⊆ B quando todo elemento de A também pertence a B. Minha empresa está contida no mercado: tudo que é meu está no mercado, mas nem tudo do mercado é meu. Ainda.",
+            "opcao1": "Próximo",
+            "proximo1": "testeSubconjunto",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeSubconjunto": {
+            "texto": "Teste: se A = {2, 4} e B = {1, 2, 3}, então A ⊆ B é:",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeSubconjuntoErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeSubconjuntoCerto"
+        },
+        "testeSubconjuntoCerto": {
+            "texto": "Correto. O 4 está em A, mas não está em B, então A não está contido em B.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntosNumericos",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeSubconjuntoErrado": {
+            "texto": "Errado. O elemento 4 de A não pertence a B. Basta um elemento de fora para a relação cair.",
+            "opcao1": "Próximo",
+            "proximo1": "conjuntosNumericos",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "conjuntosNumericos": {
+            "texto": "Por fim, os conjuntos numéricos: naturais (N), inteiros (Z), racionais (Q), irracionais (I) e reais (R). Racionais podem ser escritos como fração; irracionais têm decimal infinita e não periódica.",
+            "opcao1": "Próximo",
+            "proximo1": "testeNumericos",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeNumericos": {
+            "texto": "Teste: o número √2 pertence ao conjunto dos racionais?",
+            "opcao1": "Verdadeira",
+            "proximo1": "testeNumericosErrado",
+            "opcao2": "Falsa",
+            "proximo2": "testeNumericosCerto"
+        },
+        "testeNumericosCerto": {
+            "texto": "Correto. √2 é irracional: sua decimal é infinita e não periódica.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "testeNumericosErrado": {
+            "texto": "Errado. √2 não pode ser escrito como fração, então é irracional.",
+            "opcao1": "Próximo",
+            "proximo1": "encerramento",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "encerramento": {
+            "texto": "Por hoje encerro por aqui, nobres colegas, meu motorista está esperando.",
+            "opcao1": "Obrigado pelo conhecimento",
+            "proximo1": "despedida",
+            "opcao2": null,
+            "proximo2": null
+        },
+        "despedida": {
+            "texto": "Agradeça votando a favor da minha empresa, colega. Até mais!",
+            "opcao1": "RETURN",
+            "proximo1": null,
+            "opcao2": null,
+            "proximo2": null
+        }
+    }
+}
