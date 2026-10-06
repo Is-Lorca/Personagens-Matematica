@@ -16,14 +16,20 @@
   <body>
     <section id="home">
       <div>
-        <audio id="audio" preload="metadata" autoplay loop="true">
-          <source src="./src/music/Boomin.music.mp3" type="audio/mp3" />
-          <source src="./src/music/Boomin.music.ogg" type="audio/ogg" />
-          <source src="./src/music/Boomin.music.wav" type="audio/wav" />
-          <p>Seu navegador não suporta audio :/</p>
-        </audio>
-        <button id="botaoAudio"> <img id=iconMute src="./src/img/opcoes audio/AudioMute3.png" alt="Ligar audio"></button>
-      </div>
+      <audio id="audio" preload="metadata" loop>
+        <source src="./src/music/Boomin.music.mp3" type="audio/mpeg" />
+        <source src="./src/music/Boomin.music.ogg" type="audio/ogg" />
+        <source src="./src/music/Boomin.music.wav" type="audio/wav" />
+        <p>Seu navegador não suporta audio :/</p>
+      </audio>
+      <button id="botaoAudio">
+        <img
+          id="iconMute"
+          src="src/img/opcoes audio/AudioMute3.png"
+          alt="Desligar audio"
+        />
+      </button>
+    </div>
       <h1 id="nomeJogo">Matemática em jogo</h1>
       <picture>
         <source media="(max-width:767px)" srcset="src/imagens/homecel.png" />

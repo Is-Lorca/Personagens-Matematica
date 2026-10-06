@@ -73,6 +73,18 @@ function escrever(texto) {
       // pega o elemento, altera o conteudo de texto dele e adiciona 1 letra por vez
       elemento.textContent += fala.charAt(i);
       // pega fala, "abre ele" e pega o caracter que está armazenado na posição i
+
+      if (i % 2 === 0 && fala.charAt(i) !== " ") {
+        const personagem = localStorage.getItem("personagem");
+        if (personagem === "peixoto") {
+          somTextoDra.currentTime = 0;
+          somTextoDra.play();
+        } else {
+          somTextoPlut.currentTime = 0;
+          somTextoPlut.play();
+        }
+      }
+
       i++;
       // atualiza ponteiro
       escrever.timer = setTimeout(passo, 30);

@@ -14,31 +14,41 @@
     />
   </head>
   <body>
+    <div>
+      <audio id="audio" preload="metadata" autoplay loop="true">
+        <source src="./src/music/Boomin.music.mp3" type="audio/mp3" />
+        <source src="./src/music/Boomin.music.ogg" type="audio/ogg" />
+        <source src="./src/music/Boomin.music.wav" type="audio/wav" />
+        <p>Seu navegador não suporta audio :/</p>
+      </audio>
+      <button id="botaoAudio">
+        <img
+          id="iconMute"
+          src="src/img/opcoes audio/AudioMute3.png"
+          alt="Ligar audio"
+        />
+      </button>
+    </div>
     <h1 id="tituloMateria">Escolha uma Matéria:</h1>
     <section class="painelMateria">
-        <button data-materia="proposicao" class="botaoMateria">
-            Proposição
-        </button>
-        <button data-materia="tabelaVerdade" class="botaoMateria">
-            Tabela Verdade
-        </button>
-        <button data-materia="conjuntos" class="botaoMateria">
-            Conjuntos
-        </button>
-        <button data-materia="produtoCartesiano" class="botaoMateria">
-            Plano/Produto Cartesiano
-        </button>
+      <button data-materia="proposicao" class="botaoMateria">Proposição</button>
+      <button data-materia="tabelaVerdade" class="botaoMateria">
+        Tabela Verdade
+      </button>
+      <button data-materia="conjuntos" class="botaoMateria">Conjuntos</button>
+      <button data-materia="produtoCartesiano" class="botaoMateria">
+        Plano/Produto Cartesiano
+      </button>
       <!-- Marcando final de  coluna -->
-        <button data-materia="relacaoBinaria" class="botaoMateria">
-            Relação Binária
-        </button>
-        <button data-materia="funcoes" class="botaoMateria">
-            Funções
-        </button>
-        <button data-materia="equacaoReta" class="botaoMateria">
-            Equação de uma Reta
-        </button>
-        <script src="src/javascript/escolhaMateria.js"></script>
+      <button data-materia="relacaoBinaria" class="botaoMateria">
+        Relação Binária
+      </button>
+      <button data-materia="funcoes" class="botaoMateria">Funções</button>
+      <button data-materia="equacaoReta" class="botaoMateria">
+        Equação de uma Reta
+      </button>
+      <script src="src/javascript/musica.js"></script>
+      <script src="src/javascript/escolhaMateria.js"></script>
     </section>
   </body>
 </html>

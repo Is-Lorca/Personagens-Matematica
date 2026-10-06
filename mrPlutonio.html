@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,18 @@
     />
 </head>
 <body id="bodyPersona">
+    <div>
+        <audio id="audio" preload="metadata" loop>
+            <source src="src/music/Ledger of Thorns.mp3" type="audio/mp3">
+        </audio>
+    
+        <button id="botaoAudio">
+            <img 
+            id="iconMute"
+            src="src/img/opcoes audio/Audio3.png">
+        </button>
+    </div>
+
     <header>
         <h1 id="tituloMateria"></h1>
     </header>
@@ -38,6 +50,7 @@
             </div>
         </div>
     </section>
+    <script src="src/javascript/musica.js"></script>
     <script src="src/javascript/dialogo.js"></script>
 </body>
 </html>
